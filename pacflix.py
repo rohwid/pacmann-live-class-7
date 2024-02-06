@@ -221,30 +221,34 @@ if __name__ == "__main__":
     print(user_1.username, user_1.current_duration_plan, user_1.current_plan)
     print(user_1.get_data('Shandy'))
     
-    print("----------- TEST CASE 1 -----------")
+    print("\n\n----------- TEST CASE 1 -----------")
     user_2 = User(data)
     user_2.check_benefit()
     
-    print("----------- TEST CASE 2 -----------")
+    print("\n\n----------- TEST CASE 2 -----------")
     user_2.check_plan('cahya')
     
-    print("----------- TEST CASE 3 -----------")
+    print("\n\n----------- TEST CASE 3 -----------")
     user_3 = User(data)
     user_3.upgrade_plan('ana', 'premium plan')
+    print(" ")
     
     user_2 = User(data)
     user_2.check_benefit()
-    user_2.check_plan('cahya')
-    user_2.upgrade_plan('cahya', 'premium plan')
+    print(" ")
     
-    print("----------- Add New Data -----------")
+    user_2.check_plan('cahya')
+    print(" ")
+    user_2.upgrade_plan('cahya', 'premium plan')
+    print(" ")
+    
     faizal = NewUser(data)
     faizal.add_user("faizal_icikiwir")
     
-    print("------- Print Refferal Code --------")
+    print("\n\n------- Print Refferal Code --------")
     print(faizal.get_refferal_code())
     
-    print("----------- TEST CASE 4 -----------")
+    print("\n\n----------- TEST CASE 4 -----------")
     faizal.pick_plan('faizal_icikiwir', 'basic plan', 'bagus-9f92')
     
     faizal.pick_plan('faizal_icikiwir', 'basic plan', 'indira-9f92')
