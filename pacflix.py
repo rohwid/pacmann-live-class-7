@@ -250,5 +250,6 @@ if __name__ == "__main__":
     
     print("\n\n----------- TEST CASE 4 -----------")
     faizal.pick_plan('faizal_icikiwir', 'basic plan', 'bagus-9f92')
+    print(" ")
     
     faizal.pick_plan('faizal_icikiwir', 'basic plan', 'indira-9f92')
